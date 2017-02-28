@@ -13,7 +13,7 @@ RUN cd /usr/local/bin && \
     unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
     rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 
-RUN apk --update add git openssh-client && \
+RUN apk --update add git openssh-client awscli && \
   rm -rf /var/cache/apk/*
 
 WORKDIR /work
