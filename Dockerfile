@@ -1,4 +1,4 @@
-FROM dsop/alpine-base:3.5
+FROM dsop/alpine-base
 
 ENV GLIBC 2.23-r3
 ENV TERRAFORM_VERSION 0.8.8
